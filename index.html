@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Simple Interest Calculator by ToongeePrime</title>
+	<script id="addJQ_v360" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" id="calculator_css" href="calculator.css">
+</head>
+
+<body>
+
+
+<div id="prime_calculatorWrap" class="prel">
+
+<div id="prime_calculator">
+
+	<div id="calcBox">
+		<div id="calcHdr">
+			<h3>Simple Interest Calculator</h3>
+		</div>
+		<div id="calc_inputWrap">
+		<div id="calc_inputs">
+			<div class="calc_inps initial strch">
+				<label for="calc_init_amount">Initial Amount</label>
+				<input type="number" id="calc_init_amount" value="10000" tabindex="1" step="10" />
+			</div>
+			<div class="calc_inps rate strch">
+				<label for="calc_int_rate">Interest Rate</label>
+				<input type="number" id="calc_int_rate" value="10" tabindex="1" min="1" max="100"><span>%</span>
+			</div>
+			<div class="flex">
+				<div class="calc_inps duration">
+					<label for="calc_duration">Duration</label>
+					<input type="number" id="calc_duration" value="3" tabindex="1" min="1" max="50" />
+				</div>
+				<div class="calc_inps time">
+					<label for="calc_m_y"></label>
+					<select id="calc_m_y" value="3" tabindex="1">
+						<option value="month">Month(s)</option>
+						<option value="year">Year(s)</option>
+					</select>
+				</div>
+			</div>
+			<div id="calc_screen">
+			<p id="ttlhd">Total:</p>
+				<input id="resultTotal" name="resultTotal" class="results" readonly>
+				<em>Interest:</em>
+				<input id="interestAmt" name="interestAmt" class="results" readonly>
+			</div>
+			<div id="calcgetResult">
+				<p class="calcgetResult button btn">Get Result</p>
+			</div>
+		</div>
+	</div>
+	</div><!-- #calcBox -->
+
+</div><!-- #prime_calculator -->
+
+	<p id="credit">
+		by <a href="https://github.com/toongeeprime" title="ToongeePrime on Github">ToongeePrime</a>
+		 of <a href="https://akawey.com/" title="Akàwey Online Enterprises">Akawey.com</a>
+	</p>
+
+</div>
+
+
+	<script src="calculator.js"></script>
+
+</body>
+</html>
+
